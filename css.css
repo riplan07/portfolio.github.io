@@ -1,0 +1,710 @@
+/* ..................reset css............... */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ..................css.......... */
+
+body
+{
+    margin:0;
+}
+.container
+{
+    padding:0 5%;
+    max-width:80%;
+    margin:0 auto;
+}
+header
+{
+    background-color:#0c4270;
+    overflow:none;
+}
+.nav-bar
+ {
+     display:flex;
+     justify-content:space-between;
+     color:#df7c20;
+     padding-top:7px;
+ }
+ .nav-bar ul
+ {
+     display:flex;
+ }
+ .nav-bar ul li
+ {
+     list-style:none;
+ }
+.nav-bar ul li a
+ {
+   
+    text-decoration: none;
+    color:#df7c20;
+ }
+.phone
+{
+    padding-right:5px;
+    font-size:16px;
+}
+.navigation
+{
+   
+    border-bottom:1px solid #195080;
+}
+
+.logo
+{
+    color:#df7c20;
+    font-size: 32px;
+}
+span
+{
+    color:#b9ada2; 
+    padding-right: 10px;
+    font-size: 36px;
+}
+.header-content ul
+ {
+     list-style: none;
+     padding:0;
+     margin:0;
+     
+ }
+.header-content ul li
+ {
+     display:inline-block;
+     margin-right: 22px;
+ } 
+.header-content ul li a
+ {
+     text-decoration: none;
+     color:white;
+ }
+.header-content
+ {
+     display:flex;
+     align-items:center;
+     justify-content: space-between;
+    
+ }
+ .link
+ {
+     text-transform: uppercase;
+   
+ }
+ .home
+ {
+     background-color: #ef801a;
+     padding:32px;
+     background-size: cover;
+     background-attachment: fixed;
+     
+ }
+ .header-content .menu-icon 
+ {
+    display:none;
+}
+
+/* .................section............ */
+/* ..................banner........... */
+.banner
+{
+    line-height:0;
+}
+ /* .banner-image
+ {
+    width:100%; 
+    position:relative;
+ }
+ .banner-content
+ {
+     position:absolute;
+     bottom: 25%;
+     left:72%;
+     color:#2f3a58;
+     font-family: sans-serif;    
+ }
+ .banner-content h2
+ {
+    font-family: sans-serif;
+    padding: 0px 0px 18px 32px;
+    font-size: 23px;;
+ }
+ .banner-content p
+ {
+     padding-top:13px;
+ } */
+
+ /* ....................eDUCATIONAL INSTITUTE.......... */
+ .education
+ {
+      background:#ef801a;    
+ }
+.education-content
+ {
+     display:flex;
+     justify-content: space-between;
+     align-items:center;
+     padding:40px 0;
+     color:#fdecde;
+ }
+ .education-leftcol h2
+ {
+    font-size: 24px;
+ }
+ .education-leftcol p
+ {
+     padding:15px 0;
+     line-height: 0.5cm;
+ }
+ .education-leftcol
+ {
+     width:80%;
+}
+ .education-rightcol
+{
+     width:10%
+}
+.read-more
+ {
+    color:#fdecde;
+    background:#ef801a;
+    border:1px solid white;
+    padding:10px;
+} 
+
+/* ..............menu-container............. */
+.course-content
+{
+    text-align:center;
+}
+.course-content h2
+{
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+.course-content p
+{
+    padding: 20px 0 39px;
+}
+.course-container
+{
+    padding:40px 0;
+}
+.main-bar
+{
+    display:flex;   
+}
+.png
+{
+    border: 1px solid #ef801a;
+    padding: 27px;
+    border-radius: 50px;
+    background:white;
+    color:#ef801a;
+    position:absolute;
+    top: 0;
+    left: 34%;
+    font-size:32px;
+
+}
+.main-bar
+{
+    background-color:#ef801a; 
+    padding:20px 0 5px;
+}
+.content
+{
+border:1px solid #ef801a; 
+padding:15px;
+margin:65px 20px;
+background: white;
+}
+.content h2
+{
+    color:#424242; 
+    font-size:17px;
+    text-align:center; 
+    padding: 23px 0;
+}
+
+.content p
+{
+    color:#a4a4a4;
+    text-align:center; 
+}
+.vacation
+{
+    position:relative;
+    width:25%;
+}
+/* ............our institute-------- */
+.institute
+{
+    background: #0c4270;
+    color:#ced9e2;
+    margin-top:25px;
+}
+.institute-content
+{
+    text-align:center;
+    padding: 0 18%;
+    
+}
+.institute-content h2
+{
+    font-family:sans-serif;
+    font-size:23px;
+    font-weight:bold ;
+}
+.institute-content p
+{
+    padding: 25px 0px;
+    line-height:0.5cm;
+}
+.content-container
+{
+    padding:40px 0;
+}
+.left-col
+{
+    width:50%;
+}
+.left-col p
+{
+    line-height:0.5cm;
+}
+.right-col
+{
+    width:50%
+}
+ul li
+{
+    list-style:none;
+    padding:0;
+}
+.arrow
+{
+    border: 1px solid #ced9e2;
+    padding: 4px 6px;
+    border-radius: 36px;
+    font-size: 13px;
+    margin-right: 18px;
+}
+.letters
+{
+    padding: 28px 0;
+}
+.institute-list
+{
+    padding:6px 1px;
+}
+.institute-main
+{
+    display:flex;
+    padding-bottom: 20px;
+}
+
+.button
+{
+    margin-top: 5px;
+    padding: 16px;
+    background: #c97628;
+    color: white;
+    border: none;
+}
+/* ....................date-container.................. */
+.date-container
+{
+    background:#e3e3e3;
+}
+.article
+{
+    display:flex;  
+    padding: 40px 0;
+    width:100%;
+}
+.program , .news , .time
+{
+    width:33.33%;
+}
+.program h2 , .news h2 , .time h2
+{
+    color:#505050;
+    font-size: 23px;
+    padding: 20px 0;
+}
+.programmers
+{
+    color:#828282;
+    line-height: 0.5cm;
+}
+.news ul
+{
+    padding-inline-start: 0;
+}
+ .news ul li
+{
+    border:1px solid#cfcfcf;
+    width:86%;
+} 
+.items
+{
+    color:#828282;
+    margin-bottom:6px;
+}
+#text-item
+{
+    padding:13px 10px;
+}
+.week
+{
+    color:#ed8d35;
+    padding-top: 6px;
+}
+.hours
+{
+   color: #505050;
+   padding-top:2px;
+}
+.programmers
+{
+    padding:2px;
+}
+.clock
+{
+    padding-right:5px;
+}
+.music
+{
+    color:#5a5a5a;
+    /* padding: 17px 0; */
+    font-size:20px;
+}
+.top
+{
+    border-top:1px solid #cfcfcf;
+}
+/* .....................footer................ */
+footer
+{
+    background: #111523;
+}
+.footer-section
+{
+    display:flex;
+    justify-content: space-between;
+    padding:20px 0;
+}
+.end h2, .quick h2 ,.posts h2, .recent h2
+{
+    color:#c8c9cd;
+    font-size: 17px;
+    padding:17px 0;
+}
+.contacts a
+{
+    text-decoration: none;
+    color:#5e5f63;
+    line-height: 0.6cm;
+} 
+.copyrights
+{
+    color:#c2c2c6;
+} 
+.footer-content p
+{
+    font-size:13px;
+}
+.footer-content ul
+ {
+     list-style: none;
+     padding:0;
+     margin:0;
+     
+ }
+.footer-content ul li
+ {
+     display:inline-block;
+     margin-right: 15px;
+     
+ } 
+.footer-content ul li a
+ {
+     text-decoration: none;
+     color:white;
+ }
+.footer-content
+ {
+     display:flex;
+     align-items:center;
+     justify-content: space-between;  
+ } 
+.square
+{
+    border: 1px solid #1e2027;
+    padding: 5px;
+}
+/* @media screen and (max-width: 1150px) {
+    .header-content
+    {
+      display:block;
+      width: 100%;
+      
+    }
+    .header-content ul li
+    {
+        display:block;
+    }
+    .home
+    {
+        padding:10px;
+        background-repeat: no-repeat;
+
+    }
+}
+@media screen and (max-width: 1200px) 
+{ 
+    .education-content
+    {
+        display:block;
+    }
+    .education-leftcol
+    {
+     width:100%;
+    }
+   .education-rightcol
+    {
+     width:100%
+    }
+}
+/* @media screen and (max-width: 1350px) 
+{
+    .main-bar
+    {
+        display:block;
+    }
+    .vacation
+    {
+        width:50%
+    }
+} */
+/* @media screen and (max-width: 800px)   
+{
+    .institute-main
+    {
+        display:block;
+    }
+} */ 
+@media screen and (max-width: 1200px) 
+{
+    .header-content ul li a 
+    {
+        display: none;
+    }
+    .header-content .menu-icon 
+    {
+    display:block;
+    float:right;
+    color:white;
+    align-items: center;
+    }
+    .home
+    {
+        background-color:#0c4270;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .topnav.responsive
+     {
+         position: relative;
+     }
+    .topnav.responsive a.menu-icon 
+    {
+      position: absolute;
+      right: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      /* text-align: left; */
+    }
+    .header-content ul li
+    {
+        display:block;
+    }
+    .home
+    {
+       padding:5px 0 2px 0; 
+    }
+  }
+  @media screen and (max-width: 400px)
+  {
+    .logo
+    {
+        font-size: 16px;
+
+    }  
+    span
+    {
+        font-size:20px;
+    }
+    .phone
+    {
+        font-size:8px;
+    }
+    .tel
+    {
+        font-size:5px;
+    }
+    .nav-bar p
+    {
+        font-size:8px;
+    }
+    .carousel-caption h1
+    {
+        font-size:16px;
+    }
+    .carousel-caption p
+    {
+        font-size:12px;
+    }
+    .education-leftcol
+    {
+        width:100%;
+    }
+    .education-leftcol h2
+    {
+        font-size:16px;
+    }
+    .education-leftcol p
+    {
+        font-size:12px;
+    }
+    .education-content
+    {
+        display:block;
+    }
+    .education-rightcol
+    {
+        width:100%;
+    }
+    .institute-content
+    {
+        padding:0;
+    }
+    .institute-main
+    {
+        display:block;
+        width:100%;
+    }
+    .left-col
+    {
+        width:100%;
+    }
+    .right-col
+    {
+        width:100%;
+        margin-top:5px;
+    }
+    .main-bar
+    {
+        display:block;
+    }
+    .vacation
+    {
+        width:100%;
+    }
+    .content
+    {
+
+    }
+   .article
+   {
+       display:block;
+       width:100%;
+   } 
+   .program , .news , .time
+   {
+       width:100%;
+   }
+   .news ul li
+   {
+       width:100%;
+   }
+   .footer-section
+   {
+       display:block;
+   }
+   .footer-content
+   {
+       display:block;
+   }
+   .png
+   {
+       top:-51px;
+   }
+   .header-content
+   {
+       position:relative;
+   }
+   .header-content ul
+   {
+       position:absolute;
+       z-index:999;
+       top:100%;
+   }
+   .home
+   {
+       background:none;
+   }
+   /* .top-nav
+   {
+       display:inline-block;
+   } */
+  }
