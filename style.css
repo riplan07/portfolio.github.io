@@ -107,6 +107,10 @@ span
     padding-right: 10px;
     font-size: 36px;
 }
+.top-nav
+{
+    overflow: hidden;
+}
 .top-nav ul
  {
      list-style: none;
@@ -126,13 +130,51 @@ span
  .link
  {
      text-transform: uppercase;
-   
  }
+  .dropdown
+  {
+      float:none;
+      overflow:hidden;
+      clear:both;
+  }
+  .dropbtn
+  {
+      border:none;
+      background: inherit;
+      color:white;
+  }
+  .dropdown-content
+  {
+      display:none;
+
+  }
+  .dropdown:hover
+  {
+      background: lightgreen;
+  }
+  .dropdown-content a
+  {
+      display:block;
+  }
+  .dropdown-content a:hover
+  {
+      background: lawngreen;
+  }
+  .dropdown:hover .dropdown-content 
+  {
+    display: block;
+  }
+  .header-content
+  {
+      position:relative;
+  }
+  
+  
  .home
  {
      background-color: #ef801a;
      padding:32px;
-     background-size: cover;
+      background-size: cover;
      background-attachment: fixed;     
  }
  /* .fees {
@@ -160,29 +202,6 @@ span
 {
     line-height:0;
 }
- /* .banner-image
- {
-    width:100%; 
-    position:relative;
- }
- .banner-content
- {
-     position:absolute;
-     bottom: 25%;
-     left:72%;
-     color:#2f3a58;
-     font-family: sans-serif;    
- }
- .banner-content h2
- {
-    font-family: sans-serif;
-    padding: 0px 0px 18px 32px;
-    font-size: 23px;;
- }
- .banner-content p
- {
-     padding-top:13px;
- } */
 
  /* ....................eDUCATIONAL INSTITUTE.......... */
  .education
@@ -491,10 +510,11 @@ footer
     border: 1px solid #1e2027;
     padding: 5px;
 }
+/* ............................Media query............. */
 
 @media screen and (max-width: 576px) 
 {
-    .header-content ul li a 
+    .header-content ul  , .dropdown , .dropbtn
     {
         display: none;
     }
@@ -503,16 +523,16 @@ footer
     display:block;
     float:right;
     color:white;
-    align-items: center;
+    /* margin-right:30px; */
     }
     .home
     {
-        background-color:#0c4270;
+        background-color:none;
     }
   }
 @media screen and (max-width: 576px) 
 {
-    .topnav.responsive
+    .topnav.responsive , .dropdown-content
     {
         position: relative;
     }
@@ -520,13 +540,14 @@ footer
     {
       position: absolute;
       right: 0;
+      top:0;
     }
-    .topnav.responsive a {
+    .topnav.responsive a , .dropdown, .dropbtn {
       float: none;
       display: block;
       /* text-align: left; */
     }
-    .header-content ul li
+    .header-content ul
     {
         display:block;
     }
@@ -536,7 +557,20 @@ footer
     }
 }
 @media screen and (max-width: 576px)
-{
+{   
+    .container
+    {
+        padding-right: 5px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .container
+    {
+        padding: 0 5%;
+        max-width: 95%;
+        margin: 0 auto;
+    }
     .logo
     {
         font-size: 16px;
@@ -564,16 +598,20 @@ footer
     .header-content ul
     {
        position:absolute;
-       z-index:999;
+       z-index:1;
        top:100%;
+       right:0;
+       width: 75px;
+       background: #df7c20;
+       padding-left: 15px;
     }
     .header-content ul li
     {
-        margin-right:0;
+        margin-top: 14px;
     }
     .home
     {
-       background:none;
+       background-color:none;
     }
     .top-nav
     {
@@ -757,6 +795,11 @@ footer
 }
 @media screen and (max-width:576px)
 {
+    .education-content
+    {
+        display:block;
+        padding:15px 0;
+    }
     .education-leftcol
     {
         width:100%;
@@ -768,10 +811,6 @@ footer
     .education-leftcol p
     {
         font-size:12px;
-    }
-    .education-content
-    {
-        display:block;
     }
     .education-rightcol
     {
@@ -828,6 +867,10 @@ footer
 }
 @media screen and (max-width:576px)
 {
+    .course-container
+    {
+        padding:15px 0;
+    }
     .course-main-bar
     {
         display:block;
@@ -861,6 +904,14 @@ footer
  } 
  @media screen and (max-width: 576px)
  {
+     .institute-content
+     {
+         padding:0 5%;
+     }
+     .institute-content-container
+     {
+         padding:15px 0;
+     }
     .institute-main
     {
         display:block;
@@ -874,6 +925,10 @@ footer
     {
         width:100%;
         margin-top:5px;
+    }
+    .institute-png-content
+    {
+        padding:15px 0;
     }
 }
 @media screen and (max-width: 992px)
@@ -923,10 +978,15 @@ footer
     {
         display:block;
         width:100%;
+        padding:15px 0;
     } 
     .about-program , .about-news , .about-time
     {
         width:100%;
+    }
+    .about-program h2 , .about-news h2 , .about-time h2
+    {
+        padding:8px 0;
     }
     .about-news ul li
     {
@@ -978,6 +1038,11 @@ footer
     .footer-section
     {
         display:block;
+        padding:15px 0;
+    }
+    .footer-contacts h2, .footer-quick h2 ,.footer-posts h2, .footer-recent h2
+    {
+        padding:8px 0;
     }
     .footer-copyrights-content
     {
