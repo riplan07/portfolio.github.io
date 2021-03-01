@@ -56,7 +56,7 @@ body
 .container
 {
     padding:0 5%;
-    max-width:80%;
+    max-width:85%;
     margin:0 auto;
 }
 header
@@ -107,10 +107,21 @@ span
     padding-right: 10px;
     font-size: 36px;
 }
-.top-nav
+.header-content
+{
+    position:relative;
+}
+.top-nav ul li a
+{
+    padding:30px 10px ;
+    display:block;
+
+}
+/* .top-nav
 {
     overflow: hidden;
-}
+} */
+
 .top-nav ul
  {
      list-style: none;
@@ -134,7 +145,6 @@ span
   .dropdown
   {
       float:none;
-      overflow:hidden;
       clear:both;
   }
   .dropbtn
@@ -146,51 +156,46 @@ span
   .dropdown-content
   {
       display:none;
-
+      position:absolute;
+      top:100%;
+      left:0%;
+      z-index:999;
+    
   }
   .dropdown:hover
   {
-      background: lightgreen;
+      background: blue;
+      color:white;
+      
   }
   .dropdown-content a
   {
-      display:block;
+    display: block;
+    padding-top: 19px;
+    background: #df7351;
+    width: 120px;
+    text-align: center;
   }
   .dropdown-content a:hover
   {
-      background: lawngreen;
+      background: white;
+      color:orange;
+      
   }
   .dropdown:hover .dropdown-content 
   {
     display: block;
+    background: white;
+    color:orange;
   }
-  .header-content
-  {
-      position:relative;
-  }
-  
-  
- .home
+
+ /* .home
  {
      background-color: #ef801a;
      padding:32px;
       background-size: cover;
      background-attachment: fixed;     
- }
- /* .fees {
-    /* float: left; */
-    /* overflow: hidden;
-  }
-  .fees .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font: inherit; 
-    margin: 0; */
-  /* } */
+ } */
  .header-content .menu-icon 
  {
     display:none;
@@ -437,7 +442,7 @@ ul li
 .about-music
 {
     color:#5a5a5a;
-    /* padding: 17px 0; */
+    padding: 17px 0;
     font-size:20px;
 }
 .about-week
@@ -448,7 +453,7 @@ ul li
 .about-hours
 {
    color: #505050;
-   padding-top:2px;
+   padding-top:6px;
 }
 /* .....................footer................ */
 footer
@@ -514,11 +519,11 @@ footer
 
 @media screen and (max-width: 576px) 
 {
-    .header-content ul  , .dropdown , .dropbtn
+    .header-content ul , .dropdown , .dropbtn
     {
         display: none;
     }
-    .header-content .menu-icon 
+    .topnav .menu-icon 
     {
     display:block;
     float:right;
@@ -532,30 +537,40 @@ footer
   }
 @media screen and (max-width: 576px) 
 {
-    .topnav.responsive , .dropdown-content
+    .top-nav.responsive , .dropdown-content
     {
         position: relative;
     }
-    .topnav.responsive a.menu-icon 
+    .top-nav.responsive a.menu-icon 
     {
       position: absolute;
       right: 0;
       top:0;
     }
-    .topnav.responsive a , .dropdown, .dropbtn {
+    .top-nav.responsive , .dropdown, .dropbtn {
       float: none;
       display: block;
       /* text-align: left; */
-    }
+     }    
     .header-content ul
     {
         display:block;
     }
-    .home
+    /* .home
     {
        padding:5px 0 2px 0; 
+    } */
+    .top-nav ul li a
+    {
+    padding: 6px 5px;
+    display: block;
     }
-}
+    .top-nav
+    {
+    overflow: hidden;
+    }
+} 
+
 @media screen and (max-width: 576px)
 {   
     .container
@@ -597,18 +612,25 @@ footer
     }
     .header-content ul
     {
-       position:absolute;
-       z-index:1;
-       top:100%;
-       right:0;
-       width: 75px;
-       background: #df7c20;
-       padding-left: 15px;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        right: -24px;
+        width: 157px;
+        padding-left: 44px;
+        background: #df7c20;
+    
     }
     .header-content ul li
     {
-        margin-top: 14px;
+        /* margin-top: 14px; */
+        display:block;
+        font-size:12px;
     }
+    /* .header-content ul li button
+    {
+        font-size:12px;
+    } */
     .home
     {
        background-color:none;
@@ -617,8 +639,12 @@ footer
     {
        display:inline-block;
     }
+    .link-drop
+    {
+        font-size: 12px;
+    }
 
-}
+} 
 @media screen and (max-width: 1200px)
 {
     .logo
@@ -881,7 +907,7 @@ footer
     } 
     .course-png
     {
-        top:-25%;
+        top:-34%;
         left:38%;
     }
 }
