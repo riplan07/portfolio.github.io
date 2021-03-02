@@ -17,7 +17,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+	/* margin: 0; */
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -55,8 +55,8 @@ body
 }
 .container
 {
-    padding:0 5%;
-    max-width:85%;
+    padding: 0 4%;
+    max-width: 89%;
     margin:0 auto;
 }
 header
@@ -153,20 +153,24 @@ span
       background: inherit;
       color:white;
   }
+  .dropbtn:hover
+  {
+      color:orange;
+      background:white;
+  }
+
   .dropdown-content
   {
       display:none;
       position:absolute;
       top:100%;
       left:0%;
-      z-index:999;
+      z-index:1;
     
   }
   .dropdown:hover
   {
-      background: blue;
       color:white;
-      
   }
   .dropdown-content a
   {
@@ -174,13 +178,17 @@ span
     padding-top: 19px;
     background: #df7351;
     width: 120px;
-    text-align: center;
+    text-align:start;
   }
   .dropdown-content a:hover
   {
       background: white;
       color:orange;
       
+  }
+  .fa-caret-down
+  {
+      padding-left:3px;
   }
   .dropdown:hover .dropdown-content 
   {
@@ -439,10 +447,14 @@ ul li
 {
     padding-right:5px;
 }
+.clock
+{
+    padding-right: 7px;
+}
 .about-music
 {
     color:#5a5a5a;
-    padding: 17px 0;
+    padding: 2px 0;
     font-size:20px;
 }
 .about-week
@@ -517,9 +529,9 @@ footer
 }
 /* ............................Media query............. */
 
-@media screen and (max-width: 576px) 
+@media screen and (max-width: 700px) 
 {
-    .header-content ul , .dropdown , .dropbtn
+    .top-nav ul , .dropdown , .dropbtn
     {
         display: none;
     }
@@ -535,7 +547,7 @@ footer
         background-color:none;
     }
   }
-@media screen and (max-width: 576px) 
+@media screen and (max-width: 700px) 
 {
     .top-nav.responsive , .dropdown-content
     {
@@ -547,44 +559,57 @@ footer
       right: 0;
       top:0;
     }
-    .top-nav.responsive , .dropdown, .dropbtn {
+     .top-nav.responsive ul, .dropdown, .dropbtn {
       float: none;
       display: block;
       /* text-align: left; */
-     }    
-    .header-content ul
+      /* }   */
+      
+    /* .top-nav ul
     {
         display:block;
-    }
-    /* .home
-    {
-       padding:5px 0 2px 0; 
     } */
+    /* .top-nav.responsive ul
+    {
+        float:none;
+        display:block;
+    }
     .top-nav ul li a
     {
     padding: 6px 5px;
-    display: block;
-    }
+    /* display: block; */
+    /* }
     .top-nav
     {
-    overflow: hidden;
+    overflow: hidden; */ 
     }
+    .top-nav.responsive ul
+    {
+        float:right;
+        display:block;
+    }
+
 } 
 
-@media screen and (max-width: 576px)
+@media screen and (max-width: 700px)
 {   
-    .container
+    /* .container
     {
-        padding-right: 5px;
+        padding-right: 0;
         padding-left: 15px;
-        margin-right: auto;
+        margin-right: 0;
         margin-left: auto;
     }
     .container
     {
-        padding: 0 5%;
-        max-width: 95%;
+        padding: 0 2%;
+        max-width: 98%;
         margin: 0 auto;
+    } */
+    .container
+    {
+        padding:0;
+        max-width:93%;
     }
     .logo
     {
@@ -610,38 +635,31 @@ footer
     {
        position:relative;
     }
-    .header-content ul
+    .top-nav ul
     {
         position: absolute;
         z-index: 1;
         top: 100%;
-        right: -24px;
-        width: 157px;
-        padding-left: 44px;
+        right: 0px;
+        width: 178px;
         background: #df7c20;
-    
+        margin-top: 20px;
     }
-    .header-content ul li
+    .top-nav ul li
     {
-        /* margin-top: 14px; */
         display:block;
         font-size:12px;
-    }
-    /* .header-content ul li button
-    {
-        font-size:12px;
-    } */
-    .home
-    {
-       background-color:none;
     }
     .top-nav
     {
        display:inline-block;
     }
-    .link-drop
+    
+    .top-nav ul li a
     {
-        font-size: 12px;
+     padding: 6px 5px;
+     font-size:12px;
+     display:block;
     }
 
 } 
@@ -656,7 +674,7 @@ footer
         font-size:32px;
     }
   
-    .header-content ul li
+    .top-nav ul li
     {
       margin-right: 11px;
     }
@@ -695,7 +713,7 @@ footer
     {
         font-size:23px;
     }
-    .header-content ul li
+    .top-nav ul li
     {
     margin-right: 5px;
     }
@@ -705,7 +723,7 @@ footer
     }
    
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 800px)
 {
     .top-bar p
     {
@@ -725,15 +743,15 @@ footer
     }
     span
     {
-        font-size:20px;
+        font-size:22px;
     }
-    .header-content ul li
+    .top-nav ul li
     {
     margin-right: 4px;
     }
     .link
     {
-     font-size:7px;
+     font-size:10px;
     }    
 }
 @media screen and (max-width: 1200px)
@@ -750,7 +768,7 @@ footer
         font-size:28px;
     }
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 800px)
 {
     .carousel-caption h1
     {
@@ -804,7 +822,7 @@ footer
         font-size:14px;
     }
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 800px)
 {
     .education-content
     {
@@ -875,7 +893,7 @@ footer
     {
         font-size:13px;
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 800px)
     {
     .course-main-bar
     {
@@ -886,9 +904,19 @@ footer
     {
         width:50%;
     }
+    .course-png
+    {
+        top:5%;
+        left:39%;
+    }
     .course-vacation-content
     {
         margin:65px 37px;
+    }
+    .course-vacation-content h2
+    {
+        font-size: 19px;
+        padding: 15px 0;
     }
 }
 @media screen and (max-width:576px)
@@ -911,7 +939,7 @@ footer
         left:38%;
     }
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 800px)
  {
     .institute-main
     {
@@ -973,7 +1001,7 @@ footer
         width:100%;
     }
 }   
-@media screen and (max-width: 768px)
+@media screen and (max-width: 800px)
     {
     .article
     {
@@ -1043,7 +1071,7 @@ footer
         display:block;
     }   
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 800px)
 { 
     .footer-section
     {
