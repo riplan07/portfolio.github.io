@@ -30,7 +30,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1; 
+    text-decoration: none ;
 }
 ol, ul {
 	list-style: none;
@@ -102,7 +103,7 @@ header
     color:#df7c20;
     font-size: 32px;
 }
-span
+.logo-span
 {
     color:#b9ada2; 
     padding-right: 10px;
@@ -132,7 +133,7 @@ span
 .top-nav ul li
  {
      display:inline-block;
-     margin-right: 22px;
+     /* margin-right: 22px; */
  } 
 .top-nav ul li a
  {
@@ -174,7 +175,7 @@ span
     display: block;
     padding-top: 19px;
     background: #df7351;
-    width: 120%;
+    width: 103%;
     text-align:start;
   }
   .dropdown-content a:hover
@@ -225,7 +226,7 @@ span
  .education-leftcol p
  {
      padding:15px 0;
-     line-height: 0.5cm;
+     line-height: 1.5;
  }
  .education-leftcol
  {
@@ -328,7 +329,7 @@ background: white;
 .institute-content p
 {
     padding: 25px 0px;
-    line-height:0.5cm;
+    line-height:1.5;
 }
 .institute-content-container
 {
@@ -345,17 +346,17 @@ background: white;
 }
 .institute-left-col p
 {
-    line-height:0.5cm;
+    line-height:1.5;
 }
 .institute-png-content
 {
     padding: 28px 0;
 }
-ul li
+/* ul li
 {
     list-style:none;
     padding:0;
-}
+} */
 .institute-list
 {
     padding:6px 1px;
@@ -376,9 +377,9 @@ ul li
     color: white;
     border: none;
 }
-.institute-right-col
+.institute-right-col img
 {
-    width:50%
+    max-width:100%;
 }
 /* ....................date-container.................. */
 .date-container
@@ -404,7 +405,7 @@ ul li
 .about-programmers
 {
     color:#828282;
-    line-height: 0.5cm;
+    line-height: 1.5;
     padding:2px;
     width:96%;
 }
@@ -475,7 +476,7 @@ footer
 {
     text-decoration: none;
     color:#5e5f63;
-    line-height: 0.6cm;
+    line-height: 1.6;
 } 
 .copyrights
 {
@@ -494,8 +495,6 @@ footer
 .footer-copyrights-content ul
 {
      list-style: none;
-     /* padding:0;
-     margin:0; */
      margin-top:10px;
 }
 .footer-copyrights-content ul li
@@ -536,10 +535,6 @@ footer
   }
 @media screen and (max-width: 700px) 
 {
-    /* .top-nav.responsive , .dropdown-content
-    {
-         position: relative; 
-    } */
     .dropdown-content
     {
         position:static;
@@ -574,30 +569,22 @@ footer
         padding:0;
         max-width:93%;
     }
-    .logo
-    {
-        font-size: 16px;
-    }  
-    span
-    {
-        font-size:20px;
-    }
-    .top-bar-phone
-    {
-        font-size:8px;
-    }
     .top-bar-tel
     {
-        font-size:5px;
+        font-size:10px;
     }
-    .top-bar p
+    .top-bar-tel a
+    {
+        font-size:10px;
+    }
+    .top-bar-phone
     {
         font-size:8px;
     }
     .top-nav ul
     {
         position: absolute;
-        z-index: 1;
+        z-index: 16;
         top: 100%;
         right: 0px;
         width: 180px;
@@ -628,14 +615,9 @@ footer
     {
         font-size: 28px;
     }
-    span
+    .logo-span
     {
         font-size:32px;
-    }
-  
-    .top-nav ul li
-    {
-      margin-right: 11px;
     }
     .link
     {
@@ -652,10 +634,6 @@ footer
 }  
 @media screen and (max-width: 992px)
 {
-    .top-bar p
-    {
-        font-size:9px;
-    }
     .top-bar-phone
     {
         font-size:10px;
@@ -668,7 +646,7 @@ footer
     {
         font-size: 18px;
     }
-    span
+    .logo-span
     {
         font-size:20px;
     }
@@ -680,10 +658,6 @@ footer
 }
 @media screen and (max-width: 800px)
 {
-    .top-bar p
-    {
-        font-size:7px;
-    }
     .top-bar-phone
     {
         font-size:10px;
@@ -694,11 +668,11 @@ footer
     }
     .logo
     {
-        font-size: 15px;
+        font-size: 21px;
     }
-    span
+    .logo-span
     {
-        font-size:17px;
+        font-size:23px;
     }
     .link
     {
@@ -747,7 +721,7 @@ footer
     {
         font-size:16px;
         padding:12px 0;
-        line-height: 0.5cm;
+        line-height: 1.5;
     }
     .education-leftcol
     {
@@ -824,7 +798,7 @@ footer
     position:relative;
     display: flex;
     justify-content: center;
-    top:25%;
+    top:22%;
     }
     .course-png
     {
@@ -834,14 +808,16 @@ footer
     background: white;
     font-size: 28px;
     }
+    .course-vacation-content
+    {
+        margin:46px 8px;
+    }
 }    
-@media screen and (max-width: 992px)
+@media screen and (max-width: 995px)
 {
     .course-vacation-content
     {
-        padding:15px;
-        margin:46px 20px;
-        background: white;
+        margin:46px 8px;
     }
     .course-vacation-content h2
     { 
@@ -909,12 +885,37 @@ footer
     {
        display:flex;
        flex-wrap:wrap; 
+       padding-bottom:30px;
     }
     .course-vacation
     {
         width:100%;
     } 
-@media screen and (max-width: 800px)
+    .course-vacation-content
+    {
+        padding:15px;
+        margin:0 20px;
+    }
+    .course-center
+    {
+    top:14%;
+    }
+}   
+@media screen and (max-width: 1200px)  
+{
+    .institute-right-col img
+    {
+        max-width:85%;
+    }
+}  
+@media screen and (max-width: 992px)  
+{
+    .institute-right-col img
+    {
+        max-width:75%;
+    }
+}  
+@media screen and (max-width: 850px)
  {
     .institute-main
     {
@@ -925,10 +926,14 @@ footer
     {
         width:100%;
     }
-    .institute-right-col
+    .button
+    {
+        margin-top: -20px;
+    }
+    .institute-right-col img
     {
         width:100%;
-        margin-top:5px;
+        margin-top:8px;
     }
  } 
  @media screen and (max-width: 700px)
@@ -954,9 +959,9 @@ footer
     {
         width:100%;
     }
-    .institute-right-col
+    .institute-right-col img
     {
-        width:100%;
+        max-width:100%;
         margin-top:5px;
     }
     .institute-png-content
@@ -996,14 +1001,6 @@ footer
     {
         width:100%;
     }
-    .button
-    {
-        margin-top:-10px;
-    }
-    .institute-right-col
-    {
-        margin-top:23px;
-    }
 }
 @media screen and (max-width:700px)
 {
@@ -1029,7 +1026,7 @@ footer
     {
         margin-top:-10px;
     }
-    .institute-right-col
+    .institute-right-col img
     {
         margin-top:23px;
     }
